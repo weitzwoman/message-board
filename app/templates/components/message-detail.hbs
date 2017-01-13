@@ -11,9 +11,9 @@
   </div>
 </div>
 <br>
-<ul>
+<ul class="collection">
   {{#each message.answers as |answer|}}
-    <li><h5><i>Submitted by {{answer.author}} | {{answer.date}} </i><br> Answer: {{answer.content}}</h5></li><br>
+    <li class="collection-item"><h5><i>Submitted by {{answer.author}} | {{answer.date}} </i><br> Answer: {{answer.content}}</h5></li>
   {{/each}}
 </ul>
 
