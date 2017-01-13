@@ -1,9 +1,10 @@
 <div class="container">
   <h1>Questions</h1>
-
+  <h5><i>Click on a Question to see Answers</i></h5>
+  <br>
   <ul>
     {{#each model as |message|}}
-      {{message-tile message=message}}
+      <h5>{{message-tile message=message}}</h5>
     {{/each}}
   </ul>
 

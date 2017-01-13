@@ -1,8 +1,15 @@
-<h4>{{message.content}}</h4>
-<br>
-<h5>{{message.date}} | Submitted by {{message.author}}</h5>
-<br>
-<h5>Additional Notes: {{message.notes}}</h5>
+<div class="row">
+  <div class="col s12">
+    <div class="card-panel teal">
+      <span class="white-text">
+      <h4>{{message.content}}</h4>
+      <br>
+      <h5>{{message.date}} | Submitted by {{message.author}}</h5>
+      <h5>Additional Notes: {{message.notes}}</h5>
+      </span>
+    </div>
+  </div>
+</div>
 <br>
 <ul>
   {{#each message.answers as |answer|}}
