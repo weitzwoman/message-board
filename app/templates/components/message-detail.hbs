@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col s12">
-    <div class="card-panel teal">
+    <div class="card-panel cyan">
       <span class="white-text">
       <h4>{{message.content}}</h4>
       <br>
@@ -10,7 +10,7 @@
     </div>
   </div>
 </div>
-<br>
+
 <ul class="collection">
   {{#each message.answers as |answer|}}
     <li class="collection-item"><h5><i>Submitted by {{answer.author}} | {{answer.date}} </i><br> Answer: {{answer.content}}</h5></li>
