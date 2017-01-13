@@ -1,0 +1,19 @@
+{{#if addNewAnswer}}
+<h4>New Answer</h4>
+  <div>
+    <form>
+      <div class="input-field">
+        {{input value=author id="author" placeholder="Your Name"}}
+      </div>
+      <div class="input-field">
+        {{input value=date id="date" type="date" placeholder="Today's Date"}}
+      </div>
+      <div class="input-field">
+        {{input value=content id="content" placeholder="Enter Your Answer"}}
+      </div>
+      <button class="btn" {{action 'saveAnswer'}}>Add Answer</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn" {{action 'answerFormShow'}}>Add New Answer</button>
+{{/if}}
