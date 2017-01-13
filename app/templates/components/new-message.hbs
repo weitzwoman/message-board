@@ -1,0 +1,21 @@
+{{#if addNewMessage}}
+  <h3>New Question:</h3>
+  <form>
+    <div class="input-field">
+      {{input value=author id="author" placeholder="Your Name"}}
+    </div>
+    <div class="input-field">
+      {{input value=date id="date" type="date" placeholder="Date"}}
+    </div>
+    <div class="input-field">
+      {{input value=content id="content" placeholder="Ask Question"}}
+    </div>
+    <div class="input-field">
+      {{input value=notes id="notes" placeholder="Other Notes"}}
+    </div>
+    <button class="btn" {{action 'saveMessage'}}>Add Question</button>
+  </form>
+{{else}}
+  <br>
+  <button class="btn-large" {{action 'messageFormShow'}}>Add New Question</button>
+{{/if}}
