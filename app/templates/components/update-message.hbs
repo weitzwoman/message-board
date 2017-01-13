@@ -1,0 +1,23 @@
+{{#if updateMessageForm}}
+  <h5>Update {{message.content}}</h5>
+  <div>
+    <form>
+      <div class="input-field">
+        {{input value=author id="author" placeholder=message.author}}
+      </div>
+      <div class="input-field">
+        {{input value=date id="date" placeholder=message.date}}
+      </div>
+      <div class="input-field">
+        {{input value=content id="content" placeholder=message.content}}
+      </div>
+      <div class="input-field">
+        {{input value=notes id="notes" placeholder=message.notes}}
+      </div>
+      <button class="btn" {{action 'update' message}}>Add Question Update</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn" {{action 'updateMessageForm'}}>Update Question Details</button>
+  <br>
+{{/if}}
