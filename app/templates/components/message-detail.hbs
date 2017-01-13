@@ -3,5 +3,11 @@
 <h5>{{message.date}} | Submitted by {{message.author}}</h5>
 <br>
 <h5>Additional Notes: {{message.notes}}</h5>
+<br>
+<ul>
+  {{#each message.answers as |answer|}}
+    <li>Submitted by {{answer.author}} | {{answer.date}} <br> Answer: {{answer.content}}</li>
+  {{/each}}
+</ul>
 
 {{update-message message=message update="update"}}

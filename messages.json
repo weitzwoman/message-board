@@ -2,16 +2,19 @@
   "author": "Tracie",
   "date": "2017-01-01",
   "content": "What is the meaning of life?",
-  "notes": "This is a ridiculous question"
+  "notes": "This is a ridiculous question",
+  "answers": []
   }, {
   "author": "Paul",
   "date": "2017-01-02",
   "content": "What is the meaning of love?",
-  "notes": "This is a great question"
+  "notes": "This is a great question",
+  "answers": []
   }, {
   "author": "Tracie",
   "date": "2017-01-01",
   "content": "What is the meaning of a question?",
-  "notes": "This is a fine question"
+  "notes": "This is a fine question",
+  "answers": []
   }]
 }
