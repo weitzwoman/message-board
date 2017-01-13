@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Questions</h1>
+
+  <ul>
+    {{#each model as |message|}}
+      {{message-tile message=message}}
+    {{/each}}
+  </ul>
+</div>
